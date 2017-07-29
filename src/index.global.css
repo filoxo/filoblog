@@ -146,3 +146,9 @@ kbd {
     margin: 0 .2em;
     padding: .1em .5em;
 }
+
+.amp {
+   font-family:Baskerville,"Goudy Old Style","Palatino","Book Antiqua",serif;
+   font-size:110%;
+   font-style:italic;
+}
