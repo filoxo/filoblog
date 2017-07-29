@@ -102,8 +102,20 @@ hr {
 }
 
 blockquote {
-  border-left: 3px solid #eee;
-  padding-left: .5rem;
+  color: #333;
+  margin: 1rem 1rem 1rem 1.5rem; 
+  position: relative;
+}
+blockquote::before {
+  content: "\201c";
+  font-size: 200%;
+  font-weight: bold;
+  display: inline-block;
+  opacity: .4;
+  position: absolute;
+  font-family: Baskerville,"Goudy Old Style","Palatino","Book Antiqua",serif;
+  left: -1.3rem;
+  top: 0;
 }
 
 pre, :not(pre) > code {
