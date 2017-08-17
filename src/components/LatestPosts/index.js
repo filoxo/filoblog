@@ -8,14 +8,12 @@ import styles from "./index.css"
 const defaultNumberOfPosts = 6
 
 const LatestPosts = (props, { collection }) => {
-  const timeThreshold = new Date().getTime() - 5184000000 // 60 days (60 * 24 * 60 * 60 * 1000)
   const latestPosts = enhanceCollection(collection, {
     filter: { layout: "Post" },
     sort: "date",
     reverse: true,
   })
   .slice(0, props.numberOfPosts || defaultNumberOfPosts)
-  .filter(({date}) => Date.parse(date) > timeThreshold)
 
   return (
     <div>
