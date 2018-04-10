@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 import GithubIcon from 'react-icons/lib/fa/github-alt'
 import LinkedinIcon from 'react-icons/lib/fa/linkedin'
 import TwitterIcon from 'react-icons/lib/fa/twitter'
-
+import SrText from '../components/SrText'
 import '../css/header.css'
 
 const Header = () => {
@@ -47,11 +47,13 @@ const Header = () => {
               target="_blank"
             >
               <TwitterIcon size={20} />
+              <SrText>Follow me as @cfiloteo12 on Twitter</SrText>
             </a>
           </li>
           <li>
             <a href="https://github.com/filoxo" rel="noopener" target="_blank">
               <GithubIcon size={20} />
+              <SrText>Checkout my Github profile (@filoxo)</SrText>
             </a>
           </li>
           <li>
@@ -61,6 +63,7 @@ const Header = () => {
               target="_blank"
             >
               <LinkedinIcon size={20} />
+              <SrText>Let's connect on LinkedIn</SrText>
             </a>
           </li>
         </ul>

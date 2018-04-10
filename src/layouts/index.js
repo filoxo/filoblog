@@ -24,7 +24,9 @@ export default class Template extends React.Component {
             { name: 'description', content: 'Sample' },
             { name: 'keywords', content: 'sample, something' }
           ]}
-        />
+        >
+          <html lang="en-US" />
+        </Helmet>
         <Header />
         <div
           style={{
