@@ -8,16 +8,16 @@ import styles from './header.module.css'
 import ThemeToggle from './theme-toggle'
 
 const Header = ({ siteTitle }) => (
-  <div className={styles.headerContainer}>
-    <div className={styles.headerContent}>
-      <h1 className={styles.headerTitle}>
-        <Link className={styles.headerLink} to="/">
+  <div className="py-4">
+    <div className="mx-auto max-w-screen-md px-4 py-3 flex flex-row justify-between items-center shadow-lg bg-gray-700 text-gray-100 rounded-sm">
+      <h1 className="text-xl uppercase tracking-widest">
+        <Link className="" to="/">
           {siteTitle}
         </Link>
       </h1>
-      <div className={styles.flexRow}>
-        <ul className={styles.menuIcons}>
-          <li>
+      <div className="flex flex-row items-center">
+        <ul className="grid grid-cols-3 row-gap-6 divide-x-2 divide-grey-400">
+          <li className="m-0 px-2 text-center inline-flex">
             <a
               href="https://twitter.com/cfiloteo12"
               rel="noopener noreferrer"
@@ -27,7 +27,7 @@ const Header = ({ siteTitle }) => (
               <SrText>Follow me as @cfiloteo12 on Twitter</SrText>
             </a>
           </li>
-          <li>
+          <li className="m-0 px-2 text-center inline-flex">
             <a
               href="https://github.com/filoxo"
               rel="noopener noreferrer"
@@ -37,7 +37,7 @@ const Header = ({ siteTitle }) => (
               <SrText>Checkout my Github profile (@filoxo)</SrText>
             </a>
           </li>
-          <li>
+          <li className="m-0 px-2 text-center inline-flex">
             <a
               href="https://www.linkedin.com/in/carlosfiloteo/"
               rel="noopener noreferrer"
@@ -48,7 +48,7 @@ const Header = ({ siteTitle }) => (
             </a>
           </li>
         </ul>
-        <ThemeToggle style={{ marginLeft: '1.5rem' }} />
+        <ThemeToggle />
       </div>
     </div>
   </div>

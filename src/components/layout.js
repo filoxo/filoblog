@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
+import { ThemeProvider } from './themes/context'
 import Header from './header'
 import './layout.css'
 
@@ -31,16 +32,10 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <div
-          style={{
-            margin: '0 auto',
-            maxWidth: 960,
-            padding: '0 .5rem 1.45rem',
-          }}
-        >
-          {children}
-        </div>
+        <ThemeProvider>
+          <Header siteTitle={data.site.siteMetadata.title} />
+          <div className="mx-auto max-w-screen-md">{children}</div>
+        </ThemeProvider>
       </>
     )}
   />

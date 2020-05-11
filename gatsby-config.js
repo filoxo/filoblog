@@ -5,6 +5,7 @@ module.exports = {
   plugins: [
     'gatsby-plugin-catch-links',
     'gatsby-plugin-react-helmet',
+    `gatsby-plugin-postcss`,
     `gatsby-plugin-twitter`,
     {
       resolve: `gatsby-source-filesystem`,

@@ -690,13 +690,13 @@ blockquote::before {
   z-index: -1;
 }
 
-a {
+/* a {
   color: var(--primary-color);
 }
 
 a:visited {
   color: var(--primary-color-dark);
-}
+} */
 
 twitter-widget {
   margin: 0 auto;
@@ -715,3 +715,7 @@ aside {
     padding: 0.75rem;
   }
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
